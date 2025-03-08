@@ -69,15 +69,15 @@ def preprocess_data(data):
 # Download models and encoders from Google Drive
 def download_models():
     model_files = {
-        "rf_min.pkl": "https://drive.google.com/file/d/1TJ0IB81GV5WGu2U-NHVPlXLb40Lrn1I5/view?usp=sharing",
-        "rf_max.pkl": "https://drive.google.com/file/d/1TQd8D2TINBiXB2NrlqsHYt9_N6LXpP6W/view?usp=drive_link",
-        "rf_modal.pkl": "https://drive.google.com/file/d/1jB3Rfy_dsie3s5lRjiDZnX-e3S718OzX/view?usp=drive_link",
-        "scaler.pkl": "https://drive.google.com/file/d/1ergixNUGsA0knokEkqFACRLTTZo_7-Jv/view?usp=drive_link",
-        "State_encoder.pkl": "https://drive.google.com/file/d/16vxMkxzgU6XEebJq5pTJ9aeJbpEMDtdj/view?usp=drive_link",
-        "District_encoder.pkl": "https://drive.google.com/file/d/1Z9K5ZXW8xHtrnTIVrVjhxjZoLHLIokAl/view?usp=drive_link",
-        "Market_encoder.pkl": "https://drive.google.com/file/d/15HQ_JSxLW-gnMR8yX0jXxu_ug4JVxXdP/view?usp=drive_link",
-        "Commodity_encoder.pkl": "https://drive.google.com/file/d/1FeqOHQRg0Cyx4CxuYmfS3G6xUs3dX1gg/view?usp=drive_link",
-    }
+    "rf_min.pkl": "https://drive.google.com/uc?id=1TJ0IB81GV5WGu2U-NHVPlXLb40Lrn1I5",
+    "rf_max.pkl": "https://drive.google.com/uc?id=1TQd8D2TINBiXB2NrlqsHYt9_N6LXpP6W",
+    "rf_modal.pkl": "https://drive.google.com/uc?id=1jB3Rfy_dsie3s5lRjiDZnX-e3S718OzX",
+    "scaler.pkl": "https://drive.google.com/uc?id=1ergixNUGsA0knokEkqFACRLTTZo_7-Jv",
+    "State_encoder.pkl": "https://drive.google.com/uc?id=16vxMkxzgU6XEebJq5pTJ9aeJbpEMDtdj",
+    "District_encoder.pkl": "https://drive.google.com/uc?id=1Z9K5ZXW8xHtrnTIVrVjhxjZoLHLIokAl",
+    "Market_encoder.pkl": "https://drive.google.com/uc?id=15HQ_JSxLW-gnMR8yX0jXxu_ug4JVxXdP",
+    "Commodity_encoder.pkl": "https://drive.google.com/uc?id=1FeqOHQRg0Cyx4CxuYmfS3G6xUs3dX1gg",
+}
 
     for file_name, file_id in model_files.items():
         file_path = os.path.join(MODEL_DIR, file_name)
